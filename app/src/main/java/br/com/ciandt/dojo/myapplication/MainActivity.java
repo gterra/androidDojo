@@ -2,14 +2,9 @@ package br.com.ciandt.dojo.myapplication;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.app.ActivityOptionsCompat;
-import android.transition.ChangeBounds;
-import android.transition.ChangeImageTransform;
 import android.transition.Explode;
-import android.transition.Fade;
 import android.util.Log;
 import android.widget.ImageView;
 
@@ -17,7 +12,6 @@ import com.squareup.picasso.Picasso;
 
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.RunnableFuture;
 
 import br.com.ciandt.dojo.myapplication.character.CharacterActivity;
 
