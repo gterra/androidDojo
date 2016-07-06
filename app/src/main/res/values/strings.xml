@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Marvels APP</string>
+    <string name="marvel_icon">http://icons.iconarchive.com/icons/hopstarter/book/64/Marvel-Book-icon.png</string>
+    <string name="characters">Characters</string>
 </resources>

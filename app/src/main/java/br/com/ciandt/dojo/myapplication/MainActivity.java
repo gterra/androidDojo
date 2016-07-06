@@ -2,8 +2,6 @@ package br.com.ciandt.dojo.myapplication;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.AssetManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
@@ -12,7 +10,7 @@ import com.squareup.picasso.Picasso;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import br.com.ciandt.dojo.caracter.Caracter;
+import br.com.ciandt.dojo.myapplication.character.CharacterActivity;
 
 public class MainActivity extends Activity implements Runnable{
 
@@ -31,9 +29,9 @@ public class MainActivity extends Activity implements Runnable{
             new Timer().schedule(new TimerTask() {
                 @Override
                 public void run() {
-                    startActivity(new Intent(getApplicationContext(), Caracter.class));
+                    startActivity(new Intent(getApplicationContext(), CharacterActivity.class));
                 }
-            },2000);
+            },3000);
         }catch (Exception ex){
             Log.e("Error",ex.toString());
         }
