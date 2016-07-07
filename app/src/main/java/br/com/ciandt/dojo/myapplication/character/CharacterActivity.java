@@ -12,6 +12,7 @@ import br.com.ciandt.dojo.myapplication.R;
 
 /**
  * Created by vnaraujo on 05/07/2016.
+ * https://developer.android.com/training/material/lists-cards.html
  */
 public class CharacterActivity extends Activity {
 
