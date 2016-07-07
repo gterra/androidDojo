@@ -5,6 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.transition.Explode;
+import android.transition.Fade;
+import android.transition.Slide;
+import android.transition.Transition;
+import android.transition.TransitionValues;
 import android.util.Log;
 import android.widget.ImageView;
 
@@ -36,7 +40,7 @@ public class MainActivity extends Activity {
 
     protected void setTransactionSplashScreen() {
         try {
-            getWindow().setExitTransition(new Explode());
+            getWindow().setExitTransition(new Fade(Fade.OUT));
             new Timer().schedule(new TimerTask() {
                 @Override
                 public void run() {
